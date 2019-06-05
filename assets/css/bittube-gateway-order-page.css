@@ -1,0 +1,110 @@
+#bittube_payment_messages > span {
+    display:none;
+}
+.bittube_details_row {
+    display: flex !important;
+    align-items: center;
+    margin:0 -8px;
+}
+.bittube_details_row > * {
+    padding:0 8px;
+}
+.bittube_details_left {
+}
+.bittube_details_main {
+    flex-grow: 1;
+    word-break:break-all;
+}
+.bittube_details_right.button-row {
+    display:flex;
+    margin-top: 5px;
+    align-self: self-start;
+}
+.bittube_details_right.button-row button {
+    width: 32px;
+    height: 32px;
+    padding: 6px 2px;
+    margin: 0 4px;
+    line-height:28px;
+    text-align:center;
+}
+
+#bittube_qr_code_container {
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index:9999;
+    background:rgba(0,0,0,0.5);
+}
+#bittube_qr_code {
+    position: absolute;
+    width: 256px;
+    height: 256px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: content-box;
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+}
+#bittube_toast {
+    position: fixed;
+    z-index: 999;
+    top: 32px;
+    right: 12px;
+}
+#bittube_toast > div {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 20px;
+    width: 300px;
+    border-radius: 3px;
+    color: white;
+    right: -400px;
+}
+#bittube_toast > div.success {
+    background: rgba(68, 190, 117, 0.8);
+}
+#bittube_toast > div.error {
+    background: rgba(195, 60, 60, 0.8);
+}
+
+
+button, input[type="button"], input[type="submit"] {
+    background-color: #D3D3D3 !important;
+    border: 0;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-size: 0.875rem;
+    font-weight: 800;
+    line-height: 1;
+    padding: 0.5em 1em !important;
+    text-shadow: none;
+    -webkit-transition: background 0.2s;
+    transition: background 0.2s;
+}
+
+
+
+h2.woocommerce-order-details__title {
+    display: none;
+}
+
+
+button.button {
+    border-width: 1px;
+    border-color: #000000;
+    border-style: solid;
+}

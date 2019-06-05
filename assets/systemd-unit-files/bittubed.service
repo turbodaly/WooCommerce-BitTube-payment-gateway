@@ -1,0 +1,14 @@
+[Unit]
+Description=BitTube Full Node
+After=network.target
+
+[Service]
+User=bittubeservices
+Group=bittubeservices
+WorkingDirectory=/opt/bittube-data-dir
+Type=simple
+LimitNOFILE=65535
+ExecStart=/usr/bin/bittubed --log-file /var/log/bittubed.log --data-dir /opt/bittube-data-dir --non-interactive
+Restart=always
+[Install]
+WantedBy=multi-user.target

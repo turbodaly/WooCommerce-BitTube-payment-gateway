@@ -1,0 +1,14 @@
+[Unit]
+Description=BitTube Wallet RPC
+After=network.target bittubed.service
+
+[Service]
+User=bittubeservices
+Group=bittubeservices
+WorkingDirectory=/opt/bittube-wallets
+Type=simple
+ExecStart=/opt/bittube-bin/bittube-wallet-rpc --wallet-file /opt/bittube-wallets/woocommerce --rpc-bind-port 18080 --password-file /opt/bittube-wallets/woocommerce.password --disable-rpc-login --log-file /var/log/bittube-wallet.log
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
